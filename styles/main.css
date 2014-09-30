@@ -1,79 +1,171 @@
-/* Space out content a bit */
+html {
+  height: 100%;
+}
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
 }
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px;
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background: #000;
+  min-height: 100%;
 }
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
+p {
+  color: #fff;
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  text-align: justify;
 }
-/* Make the masthead heading the same height as the navigation */
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-  padding-bottom: 19px;
+.hidden{
+  display: none;
 }
-
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
+#parallelogram {
+  width: 50vh;
+  height: 100vh;
+  float: left;
+  left: -5%;
+  position: relative;
+  -webkit-shape-margin: 50px;
+  -webkit-transform: skew(0.171rad);
+  -moz-transform: skew(0.171rad);
+  -o-transform: skew(0.171rad);
+  background: #fff;
 }
-
-/* Customize container */
-@media (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+h1 {
+  font-family: 'Abril Fatface', cursive;
+  margin: 0;
+  margin-left: 100px;
+  z-index: 1;
 }
-.container-narrow > hr {
-  margin: 30px 0;
+p {
+  font-family: 'PT Mono';
 }
-
-/* Main marketing message and sign up button */
-.jumbotron {
+a {
+  position: absolute;
+  text-decoration: none;
+  color: #000;
+  font-family: 'PT Mono';
+  line-height: 100px;
+  display: block;
+  width: 100%;
+  height: 100px;
+  position: relative;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  font-size: 100px;
 }
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+a:active {
+  background-color: #000;
+  color: #fff;
+    text-decoration: none;
+}
+a:hover{
+      text-decoration: none;
+        background-color: #000;
+      color: #fff; 
+
+}
+li {
+  transform: skew(-0.171rad);
+/*height 0*/
+  position: relative;
+}
+/*margin-top200px*/
+.clicked {
+  background-color: #000;
+  color: #fff;
+}
+.wrap {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 0 20px;
+  overflow: scroll;
+  font-size: 1.25em;
+  line-height: 30px;
+}
+.half1 {
+  float: left;
+  width: 50%;
+  height: 100vh;
+  background-color: #000;
+}
+.half2 {
+  float: right;
+  width: 50%;
+  height: 100vh;
+  background-color: #fff;
+}
+.header {
+  font-family: "Abril Fatface";
+  font-size: 4em;
+  color: #fff;
+  text-decoration: underline;
+}
+.header:hover {
+  text-decoration: underline;
+}
+article {
+  overflow: scroll;
+  font-family: "PT Mono";
+  margin: 15% 15% 0 15%;
+  height: 200px;
+  font-size: 1.25em;
+}
+nav {
+  /*overflow: scroll;*/
+  height: 50vh;
+  margin: 0 4px 0 4px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #000;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+
+iframe{
+  /*position:absolute;*/
+  /*top:100px;*/
+  /*left:0px;*/
+  /*width:85vw;*/
+  /*height:85vh;*/
+
+}
+div.center{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height: 100vh;
+  padding:50px;
+  background-color: rgba(15,15,15,0.75);
+}
+div.center iframe{
+  width:100%;
+  height:100%;
+    display: block;
+     /*margin:20px;*/
+}
+.close-icon{
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  color: white;
+  z-index: 1;
+  /*size:40px;*/
+}
+#back{
+  right:0;
+  top:0;
+  position: absolute;
 }

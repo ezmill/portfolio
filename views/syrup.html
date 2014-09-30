@@ -1,4 +1,13 @@
-<script type="text/javascript" src="scripts/fboTextureUtils_syrup.js"></script>
+<!-- <div style="width:80%; height:100px"> --> 
+  <div id="syrup" class="fa fa-3x fa-times-circle-o close-icon"></div>
+
+  <div class="center">
+
+  <iframe src="http://ezra.io/syrup" frameborder="0"></iframe>
+</div>
+<!-- </div> -->
+
+<!-- <script type="text/javascript" src="scripts/fboTextureUtils_syrup.js"></script>
 
     <canvas id="canvas" style="background:black; position:absolute;top:0;left:0;z-index:0; width:50%; height:50%;" width="1326" height="670">
       Sorry but your browser doesn't support the canvas :(
@@ -283,7 +292,8 @@ void main() {
    if (kernelWeight <= 0.0) {
      kernelWeight = 1.0;
    }
-  gl_FragColor = vec4((sum/kernelWeight).rgb, 1.0);
+  // gl_FragColor = vec4((sum/kernelWeight).rgb, 1.0);
+  gl_FragColor = vec4(1.0,0.0,0.0,1.0);
 }
 </script>
 

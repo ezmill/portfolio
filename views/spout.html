@@ -1,4 +1,13 @@
-<script type="text/javascript" src="scripts/fboTextureUtils.js"></script>
+	<div id="spout" class="fa fa-3x fa-times-circle-o close-icon"></div>
+
+<div class="center">
+	<iframe src="http://ezra.io/spout" frameborder="0" ></iframe>
+
+
+</div>
+
+
+<!-- <script type="text/javascript" src="scripts/fboTextureUtils.js"></script>
 <script id="baseVs" type="x-shader/x-vertex">
 attribute vec3 pos;
 attribute vec4 color;
@@ -200,9 +209,11 @@ void main() {
   if (kernelWeight <= 0.0) {
      kernelWeight = 1.0;
    }
-  gl_FragColor =vec4((sum/kernelWeight).rgb, 1.0);
+  // gl_FragColor =vec4((sum/kernelWeight).rgb, 1.0);
+    gl_FragColor = vec4(1.0,0.0,0.0,1.0);
+
 }
 </script>
 <canvas id="canvas" style ="background:black; position:absolute;top:0;left:0;z-index:0; width:50%; height:50%;">
   Sorry but you're browser doesn't support the canvas :(
-</canvas>
+</canvas> -->

@@ -9,6 +9,8 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/animate.css">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -21,20 +23,45 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
-      <div class="header">
+    <!-- <div class="container"> -->
+<!--       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a ng-href="#">Home</a></li>
           <li><a ng-href="#/spout">Spout</a></li>
           <li><a ng-href="#/syrup">Syrup</a></li>
         </ul>
         <h3 class="text-muted">portfolio2</h3>
-      </div>
+      </div> -->
+    <div class="container">
+        <h1 id="back" class="header hidden">Back</h1>
 
+      <div class="half1">
+        <div href="#" class="header" id="enter">Ezra Miller</div>
+      </div>
+    <!-- <div id="parallelogram"></div> -->
+      <div class="half2" id="parallelogram">
+        
+<!--         <h1 id="title" class"animate fadeInUpBig">title</h1>
+ -->        <nav>  
+          <a href="#" id="one">syrup</a>
+          <a ng-href="#" id="two">spout</a>
+          <a href="#" id="three">three</a>
+          <a href="#" id="four">four</a>
+          <a href="#" id="five">five</a>
+          <a href="#" id="six">six</a>
+        </nav>
+        <article id="one-text" class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+      </div>
+      </div>
       <div ng-view=""></div>
 
 
-    </div>
+    <!-- </div> -->
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
