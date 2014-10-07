@@ -9,12 +9,13 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/animate.css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animate.css">
+
     <!-- endbuild -->
   </head>
   <body ng-app="portfolio2App">
@@ -33,31 +34,36 @@
         <h3 class="text-muted">portfolio2</h3>
       </div> -->
     <div class="container">
-        <h1 id="back" class="header hidden">Back</h1>
+        <!-- <h1 id="back" class="header hidden">Back</h1> -->
 
       <div class="half1">
         <div href="#" class="header" id="enter">Ezra Miller</div>
+                <div id="back" style="margin-right:15px;"class="header hidden">Back</div>
+
       </div>
     <!-- <div id="parallelogram"></div> -->
       <div class="half2" id="parallelogram">
         
 <!--         <h1 id="title" class"animate fadeInUpBig">title</h1>
  -->        <nav>  
-          <a href="#" id="one">syrup</a>
-          <a ng-href="#" id="two">spout</a>
-          <a href="#" id="three">three</a>
-          <a href="#" id="four">four</a>
-          <a href="#" id="five">five</a>
-          <a href="#" id="six">six</a>
+          <a href="#"  id="1" data-number="1">syrup</a>
+          <a ng-href="#" id="2" data-number="2">spout</a>
+          <a href="#" id="3" data-number="3">lamp</a>
+          <a href="#" id="4" data-number="4">radix</a>
+          <a href="#" id="5" data-number="5">beautiful time</a>
+          <a href="#" id="6" data-number="6">halftone</a>
         </nav>
-        <article id="one-text" class="hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</article>
+        <article id="1" class="hidden">THIS IS THE PARAGRAPH FOR SYRUP</article>
+        <article id="2" class="hidden">THIS IS THE PARAGRAPH FOR SPOUT</article>
+        <article id="3" class="hidden">THIS IS THE PARAGRAPH FOR LAMP</article>
+        <article id="4" class="hidden">THIS IS THE PARAGRAPH FOR RADIX</article>
+        <article id="5" class="hidden">THIS IS THE PARAGRAPH FOR BEAUTIFUL TIME</article>
+        <article id="6" class="hidden">THIS IS THE PARAGRAPH FOR HALFTONE</article>
       </div>
+  
       </div>
+                <h2>Enter Spout</h2>
+
       <div ng-view=""></div>
 
 

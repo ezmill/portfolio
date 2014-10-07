@@ -38,10 +38,13 @@ p {
   background: #fff;
 }
 h1 {
-  font-family: 'Abril Fatface', cursive;
+  font-family: 'Abril Fatface';
   margin: 0;
   margin-left: 100px;
   z-index: 1;
+}
+h2{
+  color:white;
 }
 p {
   font-family: 'PT Mono';
@@ -65,9 +68,9 @@ a:active {
     text-decoration: none;
 }
 a:hover{
-      text-decoration: none;
-        background-color: #000;
-      color: #fff; 
+  text-decoration: none;
+  background-color: #000;
+  color: #fff; 
 
 }
 li {
@@ -168,4 +171,14 @@ div.center iframe{
   right:0;
   top:0;
   position: absolute;
+}
+.atTheTop{
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 760px) {
+  #parallelogram{
+    width:50%;
+  }
+  
 }
