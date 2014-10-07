@@ -24,34 +24,22 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <!-- <div class="container"> -->
-<!--       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/spout">Spout</a></li>
-          <li><a ng-href="#/syrup">Syrup</a></li>
-        </ul>
-        <h3 class="text-muted">portfolio2</h3>
-      </div> -->
+
     <div class="container">
-        <!-- <h1 id="back" class="header hidden">Back</h1> -->
 
       <div class="half1">
         <div href="#" class="header" id="enter">Ezra Miller</div>
                 <div id="back" style="margin-right:15px;"class="header hidden">Back</div>
 
       </div>
-    <!-- <div id="parallelogram"></div> -->
       <div class="half2" id="parallelogram">
-        
-<!--         <h1 id="title" class"animate fadeInUpBig">title</h1>
- -->        <nav>  
-          <a href="#"  id="1" data-number="1">syrup</a>
-          <a ng-href="#" id="2" data-number="2">spout</a>
-          <a href="#" id="3" data-number="3">lamp</a>
-          <a href="#" id="4" data-number="4">radix</a>
-          <a href="#" id="5" data-number="5">beautiful time</a>
-          <a href="#" id="6" data-number="6">halftone</a>
+     <nav>  
+          <div class="nav-container"><a class="navs" href="#" id="1" data-number="1">syrup</a></div>
+          <div class="nav-container"><a class="navs" ng-href="#" id="2" data-number="2">spout</a></div>
+          <div class="nav-container"><a class="navs" href="#" id="3" data-number="3">lamp</a></div>
+          <div class="nav-container"><a class="navs" href="#" id="4" data-number="4">radix</a></div>
+          <div class="nav-container"><a class="navs" href="#" id="5" data-number="5">beautiful time</a></div>
+          <div class="nav-container"><a class="navs" href="#" id="6" data-number="6">halftone</a></div>
         </nav>
         <article id="1" class="hidden">THIS IS THE PARAGRAPH FOR SYRUP</article>
         <article id="2" class="hidden">THIS IS THE PARAGRAPH FOR SPOUT</article>
@@ -62,8 +50,6 @@
       </div>
   
       </div>
-                <h2>Enter Spout</h2>
-
       <div ng-view=""></div>
 
 
@@ -111,6 +97,7 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/spout.js"></script>
         <script src="scripts/controllers/syrup.js"></script>
+        <script src="scripts/controllers/lamp.js"></script>
 
 
         <!-- endbuild -->

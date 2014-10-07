@@ -28,6 +28,9 @@ angular.module('portfolio2App')
   		document.getElementsByClassName("center").remove();
   		document.getElementsByClassName("fa").remove();
   	}
+  	var enter = document.createElement("a");
+  	document.body.appendChild(enter);
+  	enter.innerHTML = "Enter Syrup";
 // 	var baseTexture, canvas, fbo, feedback;
 // 	var baseProgram, feedbackProgram;
 // 	var baseVs, baseFs, feedbackFs;

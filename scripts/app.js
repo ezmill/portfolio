@@ -31,6 +31,14 @@ angular
         templateUrl: 'views/syrup.html',
         controller: 'SyrupCtrl'
       })
+      .when('/lamp', {
+        templateUrl: 'views/lamp.html',
+        controller: 'LampCtrl'
+      })
+      .when('/radix', {
+        templateUrl: 'views/radix.html',
+        controller: 'RadixCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
