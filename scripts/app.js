@@ -45,6 +45,6 @@ angular
         controller: 'Beautiful_TimeCtrl'
       })
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/portfolio'
       });
   });
