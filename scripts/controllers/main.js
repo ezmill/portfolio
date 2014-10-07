@@ -9,12 +9,20 @@
  */
 angular.module('portfolio2App')
   .controller('MainCtrl', function ($scope) {
+    window.onload = function(){
+      alert("work in progress \nworks best in google chrome\nthx\nlove, ezra"); 
+    }
   	$("nav a").click(function(){
       $(".enter").remove();
       var enter = document.createElement("a");
       enter.className = "enter header"
-      enter.href = "#/" + this.innerHTML;
+      enter.href = "/" + this.innerHTML;
       enter.innerHTML = "Enter " + (this.innerHTML).charAt(0).toUpperCase() + (this.innerHTML).slice(1);
+
+      if(this.innerHTML == "beautiful time"){
+        enter.href = "/beautiful_time";
+        enter.innerHTML = "Enter Beautiful Time"
+      }
       enter.style.color = "white";
       enter.style.position = "absolute";
       enter.style.bottom = "0";
@@ -43,7 +51,7 @@ angular.module('portfolio2App')
              $("#back").removeClass("hidden");
              $("#back").removeClass("animated fadeOut");
              $("#back").addClass("animated fadeIn");
-              document.body.appendChild(enter);
+              $('.container').append(enter);
 
              $(".enter").addClass("animated fadeIn");
     			});

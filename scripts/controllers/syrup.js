@@ -23,10 +23,11 @@ angular.module('portfolio2App')
 	    }
 	}
 
-  	var close = document.getElementById("syrup");
+  	var close = document.getElementById("close");
   	close.onclick = function(){
   		document.getElementsByClassName("center").remove();
   		document.getElementsByClassName("fa").remove();
+
   	}
   	var enter = document.createElement("a");
   	document.body.appendChild(enter);

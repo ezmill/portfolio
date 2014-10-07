@@ -62,7 +62,7 @@ a.navs {
   font-family: 'PT Mono';
   line-height: 100px;
   
-  /*width: 100%;*/
+  width: 100%;
   height: 100px;
   
   
@@ -188,6 +188,7 @@ div.center iframe{
 .atTheTop{
   position: absolute;
   top: 0;
+  margin-left:-13.7px;
 }
 @media (max-width: 760px) {
   #parallelogram{

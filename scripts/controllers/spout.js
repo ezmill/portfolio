@@ -23,7 +23,7 @@ angular.module('portfolio2App')
 	    }
 	}
 
-  	var close = document.getElementById("spout");
+  	var close = document.getElementById("close");
   	close.onclick = function(){
   		document.getElementsByClassName("center").remove();
   		document.getElementsByClassName("fa").remove();

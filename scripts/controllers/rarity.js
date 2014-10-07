@@ -1,5 +1,5 @@
 angular.module('portfolio2App')
-  .controller('LampCtrl', function ($scope) {
+  .controller('RarityCtrl', function ($scope) {
 	Element.prototype.remove = function() {
 	    this.parentElement.removeChild(this);
 	}

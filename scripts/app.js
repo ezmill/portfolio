@@ -17,7 +17,8 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -35,9 +36,13 @@ angular
         templateUrl: 'views/lamp.html',
         controller: 'LampCtrl'
       })
-      .when('/radix', {
-        templateUrl: 'views/radix.html',
-        controller: 'RadixCtrl'
+      .when('/rarity', {
+        templateUrl: 'views/rarity.html',
+        controller: 'RarityCtrl'
+      })      
+      .when('/beautiful_time', {
+        templateUrl: 'views/beautiful_time.html',
+        controller: 'Beautiful_TimeCtrl'
       })
       .otherwise({
         redirectTo: '/'
