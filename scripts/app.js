@@ -17,10 +17,10 @@ angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider, $locationProvider) {
-    $locationProvider.html5Mode(true);
+  .config(function ($routeProvider) {
+    
     $routeProvider
-      .when('/portfolio', {
+      .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
@@ -45,6 +45,6 @@ angular
         controller: 'Beautiful_TimeCtrl'
       })
       .otherwise({
-        redirectTo: '/portfolio'
+        redirectTo: '/'
       });
   });

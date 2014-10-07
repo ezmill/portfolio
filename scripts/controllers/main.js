@@ -16,11 +16,11 @@ angular.module('portfolio2App')
       $(".enter").remove();
       var enter = document.createElement("a");
       enter.className = "enter header"
-      enter.href = "/" + this.innerHTML;
+      enter.href = "#/" + this.innerHTML;
       enter.innerHTML = "Enter " + (this.innerHTML).charAt(0).toUpperCase() + (this.innerHTML).slice(1);
 
       if(this.innerHTML == "beautiful time"){
-        enter.href = "/beautiful_time";
+        enter.href = "#/beautiful_time";
         enter.innerHTML = "Enter Beautiful Time"
       }
       enter.style.color = "white";
