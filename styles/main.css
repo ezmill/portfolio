@@ -136,8 +136,8 @@ article {
   font-size: 1.25em;
 }
 nav {
-  /*overflow: scroll;*/
-  height: 50vh;
+  overflow: scroll;
+  height: 100vh;
   margin: 0 4px 0 4px;
 }
 ::-webkit-scrollbar {
@@ -200,5 +200,5 @@ div.center iframe{
 .nav-container{
   /*padding:50px;*/
   margin:10px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }

@@ -23,6 +23,10 @@ angular.module('portfolio2App')
         enter.href = "#/beautiful_time";
         enter.innerHTML = "Enter Beautiful Time"
       }
+      if(this.innerHTML == "rarity"){
+        enter.href = "#/beautiful_time";
+        enter.innerHTML = "Enter Rarity"
+      }
       enter.style.color = "white";
       enter.style.position = "absolute";
       enter.style.bottom = "0";
